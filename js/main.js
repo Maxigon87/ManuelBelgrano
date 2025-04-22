@@ -126,3 +126,21 @@
     
 })(jQuery);
 
+//Contraseña para ingresar a docentes
+function verificarClave() {
+    const clave = prompt("Por favor, ingresa la contraseña para acceder:");
+  
+    if (clave === null || clave === "") {
+      // Si el usuario hace clic en Cancelar o no ingresa nada
+      alert("Acceso denegado. No se proporcionó la contraseña.");
+      return; // Sale de la función sin hacer nada
+    }
+  
+    if (clave === "3escuelas2025") {
+      // Redirige si la clave es correcta
+      window.location.href = "docentes.html";
+    } else {
+      alert("Contraseña incorrecta. Acceso denegado.");
+    }
+  }
+  
