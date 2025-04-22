@@ -243,30 +243,17 @@
         ></script>
 
         <!--Pagina de Facebook-->
-
-        <div class="container my-5">
-          <div
-            class="fb-page"
-            data-href="https://www.facebook.com/profile.php?id=100090941122310&locale=es_LA"
-            data-tabs="timeline"
-            data-width="100%"
-            data-height="500"
-            data-small-header="false"
-            data-adapt-container-width="true"
-            data-hide-cover="false"
-            data-show-facepile="true"
-          >
-            <blockquote
-              cite="https://www.facebook.com/profile.php?id=100090941122310&locale=es_LA"
-              class="fb-xfbml-parse-ignore"
-            >
-              <a
-                href="https://www.facebook.com/profile.php?id=100090941122310&locale=es_LA"
-                >Manuel Belgrano</a
-              >
-            </blockquote>
-          </div>
-        </div>
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100090941122310%26locale%3Des_LA&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+          width="340"
+          height="500"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+        <!-- termina parte de facebook-->
         <div class="text-center pb-2">
           <h6 class="text-uppercase">Escuela</h6>
           <h1 class="mb-4">Nuestras noticias</h1>
@@ -962,7 +949,6 @@
       ><i class="fa fa-angle-double-up"></i
     ></a>
 
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -971,14 +957,19 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v22.0"></script>
 
-    <!-- Contact Javascript File -->
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v22.0"
+    ></script>
+
+    <!-- Otros scripts -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
 </html>
