@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -17,8 +17,8 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -28,7 +28,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -49,23 +49,23 @@
         margin: 30,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ],
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             }
         }
     });
@@ -78,23 +78,23 @@
         margin: 30,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ],
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:2
+            576: {
+                items: 2
             },
-            768:{
-                items:3
+            768: {
+                items: 3
             },
-            992:{
-                items:4
+            992: {
+                items: 4
             }
         }
     });
@@ -109,38 +109,44 @@
         dots: true,
         loop: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             }
         }
     });
-    
+
 })(jQuery);
 
 //Contraseña para ingresar a docentes
 function verificarClave() {
     const clave = prompt("Por favor, ingresa la contraseña para acceder:");
-  
+
     if (clave === null || clave === "") {
-      // Si el usuario hace clic en Cancelar o no ingresa nada
-      alert("Acceso denegado. No se proporcionó la contraseña.");
-      return; // Sale de la función sin hacer nada
+        // Si el usuario hace clic en Cancelar o no ingresa nada
+        alert("Acceso denegado. No se proporcionó la contraseña.");
+        return; // Sale de la función sin hacer nada
     }
-  
+
     if (clave === "3escuelas2025") {
-      // Redirige si la clave es correcta
-      window.location.href = "docentes.html";
+        // Redirige si la clave es correcta
+        window.location.href = "docentes.html";
     } else {
-      alert("Contraseña incorrecta. Acceso denegado.");
+        alert("Contraseña incorrecta. Acceso denegado.");
     }
-  }
-  
+}
+
+
+//Click globo emergente en drive 
+function mostrarGlobo() {
+    const globo = document.getElementById('globo');
+    globo.classList.toggle('show-tooltip');
+}
