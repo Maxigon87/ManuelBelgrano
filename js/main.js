@@ -150,3 +150,11 @@ function mostrarGlobo() {
     const globo = document.getElementById('globo');
     globo.classList.toggle('show-tooltip');
 }
+
+//fecha de index 
+
+const fecha = new Date();
+const dia = String(fecha.getDate()).padStart(2, '0');
+const mes = String(fecha.getMonth() + 1).padStart(2, '0');
+const año = String(fecha.getFullYear()).slice(-2);
+document.getElementById('fecha').textContent = `${dia}/${mes}/${año}`;
