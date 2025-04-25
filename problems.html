@@ -4,54 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Max' Photos</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #4545d1;
-      color: #FFFFFF;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      flex-direction: column;
-      text-align: left;
-    }
-
-    .bsod-container {
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    .sad-face {
-      font-size: 4rem;
-      margin-bottom: 20px;
-    }
-
-    .error-code {
-      font-size: 1rem;
-      margin-top: 40px;
-      color: #CCCCFF;
-    }
-
-    .progress {
-      margin-top: 30px;
-      font-size: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="css/noterminada.css">
+  
 </head>
-<body>
-  <div class="bsod-container">
-    <div class="sad-face">:(</div>
-    <div>
-      Perdon pero aun no termino esta pagina.<br>
-      Es un proyecto largo y en algun momento estara terminado.
-    </div>
-    <div class="progress">
-      33% completado
-    </div>
+<div class="bsod-container">
+  <img src="img/mono.png" alt="mono">
+  <div class="message">
+    Perdón, pero aún no termino esta página.<br>
+    Estamos completando lo que falta...
   </div>
+  <div class="progress" id="progress-bar">
+    <span id="progress-text">77% completado</span>
+  </div>
+</div>
+
+<script>
+  let progress = 77;
+  const progressText = document.getElementById('progress-text');
+
+  setInterval(() => {
+    progress = progress < 80 ? progress + 1 : 77;
+    progressText.textContent = `${progress}% completado`;
+  }, 150);
+</script>
 </body>
 </html>
