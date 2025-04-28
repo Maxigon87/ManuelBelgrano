@@ -136,7 +136,7 @@ function verificarClave() {
         // Redirige si la clave es correcta
         window.location.href = "docentes.html";
     } else {
-        alert("Contraseña incorrecta. Acceso denegado.");
+        alert("Contraseña incorrecta. Intente nuevamente.");
     }
 }
 
