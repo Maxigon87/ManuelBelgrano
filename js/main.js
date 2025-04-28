@@ -5,42 +5,41 @@
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
+                $(".navbar .dropdown")
+                    .on("mouseover", function () {
+                        $(".dropdown-toggle", this).trigger("click");
+                    })
+                    .on("mouseout", function () {
+                        $(".dropdown-toggle", this).trigger("click").blur();
+                    });
             } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
+                $(".navbar .dropdown").off("mouseover").off("mouseout");
             }
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
 
-
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
+            $(".back-to-top").fadeIn("slow");
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $(".back-to-top").fadeOut("slow");
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+    $(".back-to-top").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
         return false;
     });
 
-
     // Date and time picker
-    $('#date').datetimepicker({
-        format: 'L'
+    $("#date").datetimepicker({
+        format: "L",
     });
-    $('#time').datetimepicker({
-        format: 'LT'
+    $("#time").datetimepicker({
+        format: "LT",
     });
-
 
     // Service carousel
     $(".service-carousel").owlCarousel({
@@ -52,24 +51,23 @@
         nav: true,
         navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>',
         ],
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
             576: {
-                items: 1
+                items: 1,
             },
             768: {
-                items: 2
+                items: 2,
             },
             992: {
-                items: 3
-            }
-        }
+                items: 3,
+            },
+        },
     });
-
 
     // Team carousel
     $(".team-carousel").owlCarousel({
@@ -81,24 +79,23 @@
         nav: true,
         navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>',
         ],
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
             576: {
-                items: 2
+                items: 2,
             },
             768: {
-                items: 3
+                items: 3,
             },
             992: {
-                items: 4
-            }
-        }
+                items: 4,
+            },
+        },
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -110,20 +107,19 @@
         loop: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
             576: {
-                items: 1
+                items: 1,
             },
             768: {
-                items: 2
+                items: 2,
             },
             992: {
-                items: 3
-            }
-        }
+                items: 3,
+            },
+        },
     });
-
 })(jQuery);
 
 //Contraseña para ingresar a docentes
@@ -144,17 +140,31 @@ function verificarClave() {
     }
 }
 
-
-//Click globo emergente en drive 
+//Click globo emergente en drive
 function mostrarGlobo() {
-    const globo = document.getElementById('globo');
-    globo.classList.toggle('show-tooltip');
+    const globo = document.getElementById("globo");
+    globo.classList.toggle("show-tooltip");
 }
 
-//fecha de index 
+//fecha de index
 
 const fecha = new Date();
-const dia = String(fecha.getDate()).padStart(2, '0');
-const mes = String(fecha.getMonth() + 1).padStart(2, '0');
+const dia = String(fecha.getDate()).padStart(2, "0");
+const mes = String(fecha.getMonth() + 1).padStart(2, "0");
 const año = String(fecha.getFullYear()).slice(-2);
-document.getElementById('fecha').textContent = `${dia}/${mes}/${año}`;
+document.getElementById("fecha").textContent = `${dia}/${mes}/${año}`;
+
+//Cartel de envio de formulario
+const form = document.getElementById("contactForm");
+const messageDiv = document.getElementById("form-message");
+
+form.addEventListener("submit", function (event) {
+    if (form.checkValidity()) {
+        // No evitamos el submit real
+        messageDiv.style.display = "block"; // Mostramos el cartel
+        // Y dejamos que el navegador siga su curso, Netlify lo captura
+    } else {
+        event.preventDefault(); // Solo prevenimos si hay errores
+    }
+});
+
