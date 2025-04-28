@@ -157,14 +157,3 @@ document.getElementById("fecha").textContent = `${dia}/${mes}/${año}`;
 //Cartel de envio de formulario
 const form = document.getElementById("contactForm");
 const messageDiv = document.getElementById("form-message");
-
-form.addEventListener("submit", function (event) {
-    if (form.checkValidity()) {
-        // No evitamos el submit real
-        messageDiv.style.display = "block"; // Mostramos el cartel
-        // Y dejamos que el navegador siga su curso, Netlify lo captura
-    } else {
-        event.preventDefault(); // Solo prevenimos si hay errores
-    }
-});
-
