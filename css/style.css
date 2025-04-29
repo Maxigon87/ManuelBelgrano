@@ -10351,7 +10351,6 @@ h6 {
 
 .fecha-container {
   background: linear-gradient(135deg, #1e90ff, #00bfff);
-  padding: 1rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
@@ -10367,3 +10366,31 @@ h6 {
   margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
+
+
+  .fecha-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 5px 10px; /* Reduce el espacio interior */
+    margin: 10px auto; /* Opcional, para centrar el contenedor */
+    font-size: 14px; /* Ajusta el tamaño de fuente */
+    height: 40px; /* Ajusta la altura del contenedor */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    border-radius: 5px; /* Esquinas redondeadas */
+    overflow: hidden; /* Evita que se desborden los elementos */
+  }
+
+  #clima {
+    font-weight: bold;
+    margin-left: 10px; /* Espacio entre fecha y clima */
+    display: flex;
+    align-items: center; /* Alinea el texto e icono en la misma línea */
+  }
+
+  #clima img {
+    width: 20px; /* Tamaño pequeño para el icono del clima */
+    height: 20px;
+    margin-left: 5px; /* Espacio entre el texto y el icono */
+  }
+
