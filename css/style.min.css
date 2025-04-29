@@ -84,6 +84,13 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color:#ffffff;
+}
+.horariocliente
+{
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 p {
   margin-top: 0;
@@ -5867,7 +5874,7 @@ button.bg-success:focus {
   background-color: #1e7e34  ;
 }
 .bg-info {
-  background-color: #17a2b8  ;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
 }
 a.bg-info:hover,
 a.bg-info:focus,
@@ -6937,6 +6944,7 @@ button.bg-dark:focus {
 .mb-0,
 .my-0 {
   margin-bottom: 0  ;
+
 }
 .ml-0,
 .mx-0 {
