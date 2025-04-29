@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Manuel Belgrano N°3</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Free HTML Templates" name="keywords" />
-    <meta content="Free HTML Templates" name="description" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Contacto - Escuela Manuel Belgrano N°3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link
-      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
-      rel="stylesheet"
-    />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/style.min.css" rel="stylesheet" />
-  </head>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
     <!-- Header Start -->
     <div class="container-fluid">
       <div class="row">
@@ -106,7 +98,9 @@
             >
               <div class="navbar-nav mr-auto py-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                
+                <a onclick="verificarClave()" class="nav-item nav-link"
+                  >Docentes</a
+                >
                 <!--<a href="service.html" class="nav-item nav-link">otros</a>
                 <a href="team.html" class="nav-item nav-link">otros</a>-->
                 <div class="nav-item dropdown">
@@ -121,8 +115,7 @@
                       >Inscripciones</a
                     >
                     <a href="egresados.html" class="dropdown-item">Egresados</a>
-                    <a href="problems.html" class="dropdown-item"
-                      >Taller de Lectura</a
+                    <a href="problems.html" class="dropdown-item">Taller de Lectura</a
                     >
                   </div>
                 </div>
@@ -140,132 +133,180 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid bg-page-header" style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 text-white text-uppercase">Docentes</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Inicio</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Docentes</p>
-                </div>
-            </div>
+    <div class="container-fluid bg-page-header" style="margin-bottom: 90px">
+      <div class="container">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center"
+          style="min-height: 400px"
+        >
+          <h3 class="display-3 text-white text-uppercase">EGRESADOS</h3>
+          <div class="d-inline-flex text-white">
+            <p class="m-0 text-uppercase">
+              <a class="text-white" href="">Alumnos</a>
+            </p>
+            <i class="fa fa-angle-double-right pt-1 px-3"></i>
+            <p class="m-0 text-uppercase">Egresados</p>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Page Header End -->
 
-
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="img/drivelogo.jpg" alt="drivelogo" class="img-fluid mb-4" style="max-width: 80%; height: auto; object-fit: cover;">
-                    <h2 class="mb-4">Nuestro DRIVE</h2>
-                    <p>Aqui a la derecha estan adjuntos los links para ingresar a cada DRIVE</p>
-                </div>
-                <div class="col-lg-9 pt-5 pt-lg-0">
-                    <div class="bg-primary rounded" style="height: 200px;"></div>
-                    <div class="owl-carousel service-carousel position-relative" style="margin-top: -100px; padding: 0 30px;">
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <img src="img/logoalumnos.jpg" alt="logo aluumnos">
-                            </div>
-                            <a href="https://drive.google.com/drive/folders/1k1SD_b4NY9X96iMjyHCXNulCahY_hKOf?usp=sharing"><h5 class="mb-4 px-4" style="color: rgb(24, 65, 153);">Legajo de alumnos</h5></a>
-                            <p class="m-0">Se encuentran las planillas con los legajos de cada alumno por curso.</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <img src="img/planificacionlogo.jpg" alt="planificaionlogo">
-                            </div>
-                            <a href="https://drive.google.com/drive/folders/1I6rtGXMyc98-xZvo2ou8MJ-7l65P-C2Y?usp=drive_link"><h5 class="mb-4 px-4" style="color: rgb(24, 65, 153);">Planificaciones</h5></a>
-                            <p class="m-0">Ubicacion donde se alojan las Planificaciones.</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <img src="img/libretaslogo.jpg" alt="libretaslogo">
-                            </div>
-                            <a href="https://drive.google.com/drive/folders/11OvQzh2JtMfpFFOlVlb-UZm8AeTL0ptK?usp=sharing"><h5 class="mb-4 px-4" style="color: rgb(24, 65, 153);">Libretas</h5></a>
-                            <p class="m-0">Se podran descargar las libretas de cada alumno ordenadas por curso.</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                            <div class="icon-box bg-secondary text-primary mt-2 mb-4">
-                                <img src="img/conceptodocente.png" alt="conceptosdocentes">
-                            </div>
-                            <a href="https://drive.google.com/drive/folders/1hBsse1S4YjFzNzax09KL4SZUIgjg7mVf?usp=sharing"><h5 class="mb-4 px-4" style="color: rgb(24, 65, 153);">Conceptos docentes</h5></a>
-                            <p class="m-0">Todos los conceptos de cada docente.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Alumnos-->
+    <!--<div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center pb-2">
+          <h6 class="text-uppercase">Our Attorneys</h6>
+          <h1 class="mb-4">Meet Our Attorneys</h1>
         </div>
-    </div>
-    <!-- Services End -->
-
-    <!-- Links de otras paginas Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center pb-5">
-                <h6 class="text-uppercase">Otras paginas utilizadas</h6>
-                <h1 class="mb-5">Acceso rapido</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-primary rounded" style="height: 200px"></div>
+            <div
+              class="owl-carousel team-carousel position-relative"
+              style="margin-top: -97px; padding: 0 30px"
+            >
+              <div
+                class="team-item text-center bg-white rounded overflow-hidden pt-4"
+              >
+                <h5 class="mb-2 px-4">Attorney Name</h5>
+                <p class="mb-3 px-4">Practice Area</p>
+                <div class="team-img position-relative">
+                  <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                  <div class="team-social">
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="team-item text-center bg-white rounded overflow-hidden pt-4"
+              >
+                <h5 class="mb-2 px-4">Attorney Name</h5>
+                <p class="mb-3 px-4">Practice Area</p>
+                <div class="team-img position-relative">
+                  <img class="img-fluid" src="img/team-2.jpg" alt="" />
+                  <div class="team-social">
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="team-item text-center bg-white rounded overflow-hidden pt-4"
+              >
+                <h5 class="mb-2 px-4">Attorney Name</h5>
+                <p class="mb-3 px-4">Practice Area</p>
+                <div class="team-img position-relative">
+                  <img class="img-fluid" src="img/team-3.jpg" alt="" />
+                  <div class="team-social">
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="team-item text-center bg-white rounded overflow-hidden pt-4"
+              >
+                <h5 class="mb-2 px-4">Attorney Name</h5>
+                <p class="mb-3 px-4">Practice Area</p>
+                <div class="team-img position-relative">
+                  <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                  <div class="team-social">
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="team-item text-center bg-white rounded overflow-hidden pt-4"
+              >
+                <h5 class="mb-2 px-4">Attorney Name</h5>
+                <p class="mb-3 px-4">Practice Area</p>
+                <div class="team-img position-relative">
+                  <img class="img-fluid" src="img/team-5.jpg" alt="" />
+                  <div class="team-social">
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-outline-light btn-square mx-1" href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item">
-                    <div class="testimonial-text position-relative bg-secondary text-light rounded p-5 mb-4">
-                        Sistema de asistencias, notas y legajos de alumnos. 
-                    </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <img class="img-fluid rounded-circle" src="img/gestionedulogo.png" style="width: 80px; height: 80px;" alt="">
-                        <div class="pl-4">
-                            <h5>Gestion Educativa 3.0</h5>
-                            <p class="m-0">Sistema</p>
-                            <br> <a href="https://escuelas3punto0.sanluis.edu.ar/#/pages/login" target="_blank" class="btn btn-primary mt-2">Acceder</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-text position-relative bg-secondary text-light rounded p-5 mb-4">
-                        Area docente del ministerio de educación.
-                    </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <img class="img-fluid rounded-circle" src="img/ministerio de educacion docentes.jpg" style="width: 80px; height: 80px;" alt="">
-                        <div class="pl-4">
-                            <h5>Ministerio de educacion</h5>
-                            <p class="m-0">Docentes</p>
-                            <br> <a href="https://sanluis.gov.ar/educacion/docentes/" target="_blank" class="btn btn-primary mt-2">Acceder</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-text position-relative bg-secondary text-light rounded p-5 mb-4">
-                        Plan Integral de alfabetización temprana.
-                    </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <img class="img-fluid rounded-circle" src="img/alfabetizacionlogo.png" style="width: 80px; height: 80px;" alt="">
-                        <div class="pl-4">
-                            <h5>Alfabetizacíon</h5>
-                            <p class="m-0">Lectura</p>
-                            <br> <a href="https://leamos.ulp.edu.ar" target="_blank" class="btn btn-primary mt-2">Acceder</a>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="testimonial-item">
-                    <div class="testimonial-text position-relative bg-secondary text-light rounded p-5 mb-4">
-                        Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo elitr clita lorem
-                    </div>
-                    <div class="d-flex align-items-center pt-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;" alt="">
-                        <div class="pl-4">
-                            <h5>Client Name</h5>
-                            <p class="m-0">Profession</p>
-                            <br> <a href="https://escuelas3punto0.sanluis.edu.ar/#/pages/login" target="_blank" class="btn btn-primary mt-2">Acceder</a>
-                        </div>
-                    </div>
-                </div>-->
-            </div>
+          </div>
         </div>
+      </div>
+    </div>-->
+    <!-- Team End -->
+
+    <!-- Features Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6" style="min-height: 500px">
+            <div class="position-relative h-100 rounded overflow-hidden">
+              <img
+                class="position-absolute w-100 h-100"
+                src="img/egresados.jpeg"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 pt-5 pb-lg-5">
+            <div class="feature-text bg-white rounded p-lg-5">
+              <h6 class="text-uppercase">2024</h6>
+              <h1 class="mb-4">Nombre</h1>
+              <div class="d-flex mb-4">
+                <div class="ml-4">
+                  <h5></h5>
+                  <p class="m-0">
+                    Los primeros egresados de una escuela secundaria marcan un
+                    momento histórico, reflejando esfuerzo personal, apoyo
+                    docente y familiar. Son pioneros que inspiran a las futuras
+                    generaciones con su legado educativo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- link de otras paginas  End -->
+    <!-- Features End -->
 
 
     <!-- Footer Start -->
@@ -413,8 +454,6 @@
     ></script>
 
     <!-- Otros scripts -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
