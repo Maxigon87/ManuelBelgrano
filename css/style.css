@@ -282,6 +282,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 button:not(:disabled),
@@ -347,6 +348,7 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -10367,30 +10369,84 @@ h6 {
   border-radius: 0.5rem;
 }
 
+.fecha-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 5px 10px; /* Reduce el espacio interior */
+  margin: 10px auto; /* Opcional, para centrar el contenedor */
+  font-size: 14px; /* Ajusta el tamaño de fuente */
+  height: 40px; /* Ajusta la altura del contenedor */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+  border-radius: 5px; /* Esquinas redondeadas */
+  overflow: hidden; /* Evita que se desborden los elementos */
+}
 
-  .fecha-container {
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente */
-    padding: 5px 10px; /* Reduce el espacio interior */
-    margin: 10px auto; /* Opcional, para centrar el contenedor */
-    font-size: 14px; /* Ajusta el tamaño de fuente */
-    height: 40px; /* Ajusta la altura del contenedor */
-    background-color: #f0f0f0; /* Color de fondo opcional */
-    border-radius: 5px; /* Esquinas redondeadas */
-    overflow: hidden; /* Evita que se desborden los elementos */
-  }
+#clima {
+  font-weight: bold;
+  margin-left: 10px; /* Espacio entre fecha y clima */
+  display: flex;
+  align-items: center; /* Alinea el texto e icono en la misma línea */
+}
 
-  #clima {
-    font-weight: bold;
-    margin-left: 10px; /* Espacio entre fecha y clima */
-    display: flex;
-    align-items: center; /* Alinea el texto e icono en la misma línea */
-  }
+#clima img {
+  width: 20px; /* Tamaño pequeño para el icono del clima */
+  height: 20px;
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+}
 
-  #clima img {
-    width: 20px; /* Tamaño pequeño para el icono del clima */
-    height: 20px;
-    margin-left: 5px; /* Espacio entre el texto y el icono */
-  }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* más claro */
+  backdrop-filter: blur(2px); /* efecto pro */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 💥 centra horizontalmente */
+}
+
+
+.modal input,
+.modal button {
+  width: 220px; /* o lo que te guste */
+  box-sizing: border-box;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+
+.modal button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal button:hover {
+  background: #0056b3;
+}
+
+#errorMsg {
+  color: red;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}

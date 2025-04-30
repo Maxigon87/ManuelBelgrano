@@ -112,9 +112,8 @@
             >
               <div class="navbar-nav mr-auto py-0">
                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a onclick="verificarClave()" class="nav-item nav-link"
-                  >Docentes</a
-                >
+                <a onclick="abrirModal()" class="nav-item nav-link">Docentes</a>
+                
                 <!--<a href="service.html" class="nav-item nav-link">otros</a>
                 <a href="team.html" class="nav-item nav-link">otros</a>-->
                 <div class="nav-item dropdown">
@@ -590,6 +589,15 @@
 
     <!-- Otros scripts -->
     <script src="js/main.js"></script>
-    <!--Pagina de carga -->
+    <!--Login a Docentes-->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <h2>Acceso docente</h2>
+        <input type="password" id="passwordInput" placeholder="Contraseña" />
+        <button onclick="checkPassword()">Entrar</button>
+        <p id="errorMsg"></p>
+      </div>
+    </div>
+    
   </body>
 </html>

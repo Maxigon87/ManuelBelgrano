@@ -180,4 +180,42 @@ fetch(url)
         document.getElementById('clima').textContent = 'Clima no disponible';
     });
 
+//Login para entrar a Docentes: 
+
+
+const CORRECT_PASSWORD = "3escuelas2025"; // ¡Cambia esto!
+
+function checkPassword() {
+    const input = document.getElementById("passwordInput").value;
+    const errorMsg = document.getElementById("errorMsg");
+
+    if (input === "") {
+        errorMsg.textContent = "Ingrese una contraseña.";
+    } else if (input === CORRECT_PASSWORD) {
+        localStorage.setItem("access_granted", "true");
+        window.location.href = "docentes.html"; // Asegurate que este path exista
+    } else {
+        errorMsg.textContent = "Contraseña incorrecta.";
+    }
+}
+
+// Si ya se autenticó, no mostrar el modal
+window.onload = function () {
+    if (localStorage.getItem("access_granted") === "true") {
+        document.getElementById("loginModal").style.display = "none";
+    }
+};
+function abrirModal() {
+    document.getElementById("loginModal").style.display = "flex";
+}
+  window.onclick = function (event) {
+    const modal = document.getElementById("loginModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
+
+
+
 
