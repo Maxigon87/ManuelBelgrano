@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main  # o la rama que uses
 
-media_folder: "img/noticias"
-public_folder: "/img/noticias"
+media_folder: "img/noticias"       # Carpeta donde se guardan las imágenes
+public_folder: "/img/noticias"     # Ruta pública para acceder a las imágenes
 
 collections:
   - name: "noticias"
@@ -12,6 +12,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Título", name: "title", widget: "string" }
-      - { label: "Contenido", name: "body", widget: "markdown" }
-      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Título", name: "titulo", widget: "string" }
+      - { label: "Categoría", name: "categoria", widget: "string" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Link de Facebook", name: "facebook", widget: "string" }
